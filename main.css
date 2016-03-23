@@ -30,12 +30,7 @@ a {
   color: #505050;
 }
 
-.demo-row {
-  margin: 10px;
-  border: 1px dashed gray;
-}
-
-/* Menu */
+/* menu */
 .menuItem {
   height: 3em;
   line-height: 3em;
@@ -50,7 +45,7 @@ a {
   width: 3em;
 }
 
-/* Index page call-to-action */
+/* index page call-to-action */
 .landingPage {
   height: 100vh;
   display: -webkit-flex;
@@ -62,60 +57,26 @@ a {
   flex-flow: column;
   -webkit-flex-flow: column;
 }
-.landingPage .tag {
-  font-weight: 200;
-}
 .landingPage .icon {
   font-size: 30px;
 }
 
-.section {
-  padding: 2em;
+/* index page description */
+.cardContainer {
+  margin: 1rem auto;
 }
-
-.cards-container {
-  display: flex;
-  justify-content: space-around;
-}
-
 .card {
-  margin: 0 4rem;
-  flex: 1 1 0;
+  border: 2px solid grey; 
+  border-radius: 0.5rem;
 }
-
-.card.green {
-  
-}
-
-.card .title {
+.card .cardTitle {
   color: white;
   margin-top: 0;
-  margin-bottom: 0;
   padding: 0.5rem 0;
-  background-color: grey; 
-}
-
-.card .body {
-  border: 2px solid grey; 
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-}
-
-.card .title a {
-  text-transform: uppercase;
-  color: white;
+  display: block;
+  background-color: grey;
   font-weight: 400;
-}
-
-.text-section {
-}
-
-.text-section .title {
-  margin: 0em 0em 1em 0em;
-}
-
-.text-section .body {
-  margin: 0 auto;
+  text-transform: uppercase;
 }
 
 .feature-section {
