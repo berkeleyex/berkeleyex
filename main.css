@@ -5,6 +5,11 @@ body {
   margin: 0em;
   padding: 0em;
 }
+@media (min-width: 768px) {
+ body {
+    font-size: 18px;
+  }
+}
 
 .italic { font-style: italic; }
 .bold { font-weight: 600; }
@@ -34,11 +39,6 @@ a {
 .menuItem {
   height: 3em;
   line-height: 3em;
-}
-@media (min-width: 768px) {
- .menuItem {
-    font-size: 18px;
-  }
 }
 .menu img {
   height: 3em;
@@ -77,6 +77,19 @@ a {
   background-color: grey;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+/* form submission */
+form .question {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+form .question label {
+  display: block;
+  text-align: left;
+}
+form .question textarea, form .question input {
+  width: 100%;
 }
 
 .feature-section {
