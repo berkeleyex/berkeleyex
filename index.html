@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="main.js"></script>
   </head>
   <body>
     <div class="container">
@@ -64,29 +66,31 @@
         <h3 class="title col-md-12">Sign Up</h1>
         <p class="body col-md-12">Let's get started!</p>
 
-        <form action="https://docs.google.com/forms/d/1KfZk9lBagWmpDJEYl2AiJakL6ucbCQrkpsafnWHOuI4/formResponse">
+        <form id="signUpForm" action="https://docs.google.com/forms/d/1KfZk9lBagWmpDJEYl2AiJakL6ucbCQrkpsafnWHOuI4/formResponse" target="dummy" method="POST">
           <div class="question col-md-offset-3 col-md-2">
-            <label for="entry.1350654240">Name</label>
-            <input type="text" name="name" placeholder="First and Last Name" id="entry.1350654240">
+            <label for="formName">Name</label>
+            <input id="formName" type="text" name="entry.1350654240" placeholder="First and Last Name">
           </div>
           <div class="question col-md-2">
-            <label for="entry.78421369">E-mail</label>
-            <input type="email" name="email-address" id="entry.78421369" placeholder="name@example.com" />
+            <label for="formEmail">E-mail</label>
+            <input id="formEmail" type="email" name="entry.78421369" placeholder="name@example.com" />
           </div>
           <div class="question col-md-2">
-            <label for="entry.819434865">Phone Number</label>
-            <input type="tel" name="phone-number" id="entry.819434865" maxlength="14" />
+            <label for="formTelephone">Phone Number</label>
+            <input id="formTelephone" type="tel" name="entry.819434865" maxlength="14" />
           </div>
 
           <div class="question col-md-offset-3 col-md-6">
-            <label for="entry.804456699">Desired Goals</label>
-            <textarea name="message" id="entry.804456699"></textarea>
+            <label for="formMessage">Desired Goals</label>
+            <textarea id="formMessage" name="entry.804456699"></textarea>
           </div>
 
           <div class="col-md-12">
-            <button>Sign Up</button>
+            <input type="submit" name="submit" value="Sign up">
           </div>
         </form>
+
+        <iframe id="dummy" name="dummy" style="display: none;"></iframe>
       </div>
 
       <!-- sitemap footer -->
