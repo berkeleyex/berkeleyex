@@ -92,245 +92,35 @@ form .question textarea, form .question input {
   width: 100%;
 }
 
-.feature-section {
-  display: -webkit-flex;
-  display: flex;
-  flex-flow: row;
-  -webkit-flex-flow: row;
-}
-
-.feature-section .feature {
-  display: -webkit-flex;
-  display: flex;
-  flex-flow: column;
-  -webkit-flex-flow: column;
-  flex: 1 1 0;
-  -webkit-flex: 1 1 0;
-  margin: 0em 1em;
-}
-
-.feature-section .feature img {
-  margin: 0em auto 1em auto;
-  height: 5em;
-  width: 5em;
-}
-
-.feature-section .feature .title {
-  margin: 0em 0em 1em 0em;
-}
-
-.feature-section .feature .body {
-  margin: 0em;
-  word-wrap: break-word;
-}
-
-.full-width-image-section {
-  display: -webkit-flex;
-  display: flex;
+/* instructor profile */
+.profileImage img {
   position: relative;
-}
-
-.full-width-image-section img {
-  height: 100%;
-  width: 100%;
-}
-
-.full-width-image-section .text-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-}
-
-.full-width-image-section .text-container .title {
-  margin: 0em 0em 1em 0em;
-}
-
-.full-width-image-section .text-container .body {
-  margin: 0em;
-}
-
-.center-aligned-image-section .image-container img {
-  max-width: 100%;
-}
-
-.half-width-image-section {
-  display: -webkit-flex;
-  display: flex;
-  align-items: center;
-  -webkit-align-items: center;
-}
-
-.half-width-image-section.image-right .image-container {
-  -webkit-order: 2;
-  order: 2;
-}
-
-.half-width-image-section.image-right .text-container {
-  -webkit-order: 1;
-  order: 1;
-}
-
-.half-width-image-section.image-left .image-container {
-  -webkit-order: 1;
-  order: 1;
-}
-
-.half-width-image-section.image-left .text-container {
-  -webkit-order: 2;
-  order: 2;
-}
-
-.half-width-image-section .image-container {
-  display: -webkit-flex;
-  display: flex;
-  width: 50%;
-}
-
-.half-width-image-section .image-container img {
-  width: 100%;
-  height: 100%;
-}
-
-.half-width-image-section .text-container {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: column;
-  flex-flow: column;
-  width: 50%;
-}
-
-.half-width-image-section .text-container .title {
-  margin: 0em 0em 1em 0em;
-}
-
-.half-width-image-section .text-container .body {
-  margin: 0em;
-}
-
-.action-button-container {
-  padding: 2em;
-}
-
-.action-button-container .action-button {
-  font-size: 1.25em;
-  font-weight: 200;
-  padding: 0.5em 1em;
-  margin: 0em 0.25em;
-  border-radius: 0.325em;
-  background-color: #505050;
-  border: 0.25em solid #505050;
-  color: white;
-}
-
-.profile-section {
-  display: -webkit-flex;
-  display: flex;
-}
-
-.profile-section .profile .text-container {
-  text-align: left;
-}
-
-.profile-section .profile img {
-  margin-right: 2em;
-}
-
-.profile {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-flex: 1 0 0;
-  flex: 1 0 0;
-}
-
-.profile img {
   height: 7.5em;
   width: 7.5em;
   border-radius: 50%;
   border: 2px solid #505050;
 }
-
-.profile .text-container {
-  width: 60%;
+@media (min-width: 768px) {
+  .profileImage img {
+    top: 3rem;
+    left: 2rem;
+  }
 }
-
-.profile .text-container .title {
-  margin: 0 0 1em 0;
+@media (min-width: 992px) {
+  .profileImage img {
+    top: 7rem;
+    left: 2rem;
+  }
 }
-
-.profile .text-container .body {
-}
-
-.form {
-}
-
-.form .title {
-  margin: 0em 0em 1em 0em;
-}
-
-.form .body {
-  margin: 0em 0em 0.5em 0em;
-}
-
-.form .row {
-  display: -webkit-flex;
+.profileText {
   display: flex;
-  width: 30%;
-  margin: 1em auto;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
 }
-
-.form .row .item {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex: 1 1 0;
-  flex: 1 1 0;
-  -webkit-flex-flow: column;
-  flex-flow: column;
-  text-align: left;
-  margin: 0em 0.5em;
-}
-
-.form .row .item textarea {
-  background-color: whitesmoke;
-  border: 1px solid transparent;
-  vertical-align: top;
-  resize: none;
-  outline: none;
-  height: 6em;
-  line-height: 1.5em;
-}
-
-.form .row .item input {
-  background-color: whitesmoke;
-  border: 1px solid transparent;
-  vertical-align: top;
-  padding: 0.5em;
-  resize: none;
-  outline: none;
-}
-
-.form .row .item select {
-  width: 100%;
-  background-color: whitesmoke;
-  border: 0.5em solid transparent;
-  vertical-align: top;
-  outline: none;
-}
-
-.form .row .item .submit {
-  font-size: 1.25em;
-  font-weight: 200;
-  padding: 0.5em 1em;
-  border-radius: 0.325em;
-  background-color: #505050;
-  border: 0.25em solid #505050;
-  color: white;
-  cursor: pointer;
+.profileText h2 {
+  margin-top: 0;
 }
 
 .sitemap-footer-flattened {
