@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Berkeley Exchange</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <!-- sign-up form -->
+    <div class="row">
+      <h1 class="bold">Sign Up</h1>
+      <p>Let's get started!</p>
+
+      <form id="signUpForm" action="https://docs.google.com/forms/d/1KfZk9lBagWmpDJEYl2AiJakL6ucbCQrkpsafnWHOuI4/formResponse" target="dummy" method="POST">
+        <div class="question col-md-offset-3 col-md-2">
+          <label for="formName">Name</label>
+          <input id="formName" type="text" name="entry.1350654240" placeholder="First and Last Name">
+        </div>
+        <div class="question col-md-2">
+          <label for="formEmail">E-mail</label>
+          <input id="formEmail" type="email" name="entry.78421369" placeholder="name@example.com" />
+        </div>
+        <div class="question col-md-2">
+          <label for="formTelephone">Phone Number</label>
+          <input id="formTelephone" type="tel" name="entry.819434865" maxlength="14" />
+        </div>
+
+        <div class="question col-md-offset-3 col-md-6">
+          <label for="formMessage">Desired Goals</label>
+          <textarea id="formMessage" name="entry.804456699"></textarea>
+        </div>
+
+        <div class="col-md-12">
+          <input type="submit" name="submit" value="Sign up">
+        </div>
+      </form>
+
+      <iframe id="dummy" name="dummy" style="display: none;"></iframe>
+    </div>
+
+    <!-- sitemap footer -->
+    <div class="demo-row section sitemap-footer-flattened">
+      <div class="footer-container">
+        <div class="column">
+          <h3 class="heading">Organization</h3>
+          <a class="link" href="/">About Us</a>
+          <a class="link" href="/">Our Instructors</a>
+          <a class="link" href="/">Our Curriculum</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="demo-row section copyright">
+      <p>&#169; 2016 Berkeley Exchange. All Rights Reserved.</p>
+    </div>
+    </div>
+  </body>
+</html>
