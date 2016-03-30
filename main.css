@@ -107,21 +107,52 @@ a { -webkit-transition: color 0.5s; transition: color 0.5s; }
 }
 
 /* form submission */
-form .question {
+form .form-input {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-form .question label {
+
+form .form-input label {
   display: block;
   text-align: left;
 }
-form .question textarea, form .question input {
+
+form .form-input textarea, form .form-input input {
   width: 100%;
+  border: 2px solid lightgrey;
+  outline: none;
+  padding: 0.5rem;
+}
+
+form .form-input textarea:focus, form .form-input input:focus {
+  border: 2px solid darkseagreen;
+}
+
+form .form-input textarea {
+  resize: none;
+  height: 6rem;
+}
+
+form .form-input button {
+  color: white;
+  background-color: #505050;
+  padding: 0.75rem 0;
+  font-size: 1.25rem;
+  border: none;
+  transition: background-color 0.5s;
+}
+
+form .form-input button:hover {
+  background-color: darkseagreen;
+}
+
+form .form-input button:focus {
+  outline: none;
 }
 
 /* instructor profile */
 .director, .instructors {
-  padding: 2rem 0; 
+  padding: 2rem 0;
 }
 
 .instructors, .profiles {
@@ -186,6 +217,6 @@ form .question textarea, form .question input {
 }
 
 .copyright {
-  text-align: left; 
+  text-align: left;
   margin: 1rem 0;
 }
