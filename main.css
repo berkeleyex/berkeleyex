@@ -68,26 +68,16 @@ a { -webkit-transition: color 0.5s; transition: color 0.5s; }
 /* index page call-to-action */
 .landing-page {
   padding: 10rem 0;
-  display: -webkit-flex;
   display: flex;
   align-items: center;
-  -webkit-align-items: center;
   flex-flow: column;
-  -webkit-flex-flow: column;
 }
 
 .landing-page .icon {
   font-size: 30px;
 }
 
-.description .row, .objective .row {
-  padding: 2rem 0;
-}
-
-.description p, .objective p {
-  text-align: left;
-}
-
+/* card */
 .card-section {
   padding: 2rem 0;
   text-align: center;
@@ -99,9 +89,7 @@ a { -webkit-transition: color 0.5s; transition: color 0.5s; }
 
 .card {
   display: flex;
-  -webkit-display: flex;
   flex-direction: column;
-  -webkit-flex: 1 1 0;
   flex: 1 1 0;
   margin: 0 1rem;
 }
