@@ -53,11 +53,13 @@ a { -webkit-transition: color 0.5s; transition: color 0.5s; }
 
 .menu a {
   text-align: center;
-  margin: 0.5rem 0;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 @media (min-width: 768px) {
   .menu a {
-    margin: 1rem 0;;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }
 
@@ -79,37 +81,50 @@ a { -webkit-transition: color 0.5s; transition: color 0.5s; }
 
 /* card */
 .card-section {
-  padding: 2rem 0;
   text-align: center;
-  display: flex;
-  -webkit-display: flex;
-  justify-content: space-around;
-  -webkit-justify-content: space-around;
+}
+@media (min-width: 992px) {
+  .card-section {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
-  flex: 1 1 0;
-  margin: 0 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+@media (min-width: 992px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .card .content {
-  -webkit-flex: 1 1 0;
-  flex: 1 1 0;
   background-color: whitesmoke;
-  padding: 0 0.5rem;
+  padding: 1rem 0.5rem;
+}
+@media (min-width: 992px) {
+  .card .content {
+    flex-grow: 1;
+  }
+}
+
+.card .content h3, .card .content p {
+  margin: 0.5rem 0;
+}
+
+.card .link {
+  padding: 1rem 0.5rem;
+  color: white;
+  display: block;
+  text-transform: uppercase;
 }
 
 .card .link.steelblue { background-color: lightsteelblue; }
 .card .link.coral { background-color: lightcoral; }
 .card .link.darkseagreen { background-color: darkseagreen; }
-
-.card .link {
-  padding: 1rem 0;
-  color: white;
-  text-transform: uppercase;
-}
 
 /* form submission */
 form .form-input {
