@@ -2,7 +2,7 @@ html, body {
   font-family: Helvetica Neue, Arial, Times New Roman;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale;
   color: #505050;
   text-align: center;
   margin: 0;
@@ -19,33 +19,50 @@ a { -webkit-transition: color 0.5s; transition: color 0.5s; }
 
 /* menu */
 .menu {
-  width: 100%;
   padding: 2rem 0;
-  display: flex;
-  -webkit-display: flex;
-  justify-content: center;
-  align-items: center;
+  font-size: 0.75rem;
+  font-weight: 600;
 }
-
-.menu a { margin: 0 1rem; font-size: 1.25rem; font-weight: 600; }
-.menu a.sign-up {
-  padding: 0.5rem 1rem;
-  color: white;
-  background-color: #505050;
-  border-radius: 0.35rem;
-  -webkit-transition: background-color 0.5s;
-  transition: background-color 0.5s;
+@media (min-width: 768px) {
+  .menu {
+    font-size: 1rem;
+  }
 }
-.menu a.sign-up:hover {
-  color: white;
-  background-color: darkseagreen;
+@media (min-width: 992px) {
+  .menu {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+  }
 }
-
-.menu a:hover { color: darkseagreen; }
 
 .menu .logo {
   height: 6rem;
-  max-width: 30rem;
+  max-width: 15rem;
+}
+@media (min-width: 768px) {
+  .menu .logo {
+    max-width: 20rem;
+  }
+}
+@media (min-width: 992px) {
+  .menu .logo {
+    max-width: 30rem;
+  }
+}
+
+.menu a {
+  text-align: center;
+  margin: 0.5rem 0;
+}
+@media (min-width: 768px) {
+  .menu a {
+    margin: 1rem 0;;
+  }
+}
+
+.menu a:hover {
+  color: darkseagreen;
 }
 
 /* index page call-to-action */
