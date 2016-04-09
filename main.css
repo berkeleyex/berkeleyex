@@ -127,6 +127,10 @@ a { -webkit-transition: color 0.5s; transition: color 0.5s; }
 .card .link.darkseagreen { background-color: darkseagreen; }
 
 /* form submission */
+#error {
+  color: red;
+}
+
 form .form-input {
   margin-top: 1rem;
   margin-bottom: 1rem;

@@ -9,10 +9,29 @@ $(document).ready(function () {
 });
 
 function validateForm () {
-    // TODO
-    return true;
+    $('#nameError').hide();
+    $('#emailError').hide();
+    $('#phoneError').hide();
+    var isValid = true;
+
+    if ($('#formName').val().trim() === '') {
+        $('#nameError').show();
+        isValid = false;
+    }
+
+    if ($('#formEmail').val().trim() === '') {
+        $('#emailError').show();
+        isValid = false;
+    }
+
+    if ($('#formTelephone').val().trim() === '') {
+        $('#phoneError').show();
+        isValid = false;
+    }
+
+    return isValid;
 }
 
 function onSignup () {
-    $('#thankYou').css('display', 'block');
+    $('#thankYou').show();
 }
