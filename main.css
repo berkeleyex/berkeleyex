@@ -203,7 +203,6 @@ form .form-input button:focus {
   height: 7.5rem;
   width: 7.5rem;
   border-radius: 50%;
-  border: 2px solid grey;
 }
 
 @media (min-width: 768px) {
