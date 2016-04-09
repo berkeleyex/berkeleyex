@@ -226,6 +226,26 @@ form .form-input button:focus {
   margin-top: 0;
 }
 
+/* curriculum page */
+.infoHeading {
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .infoHeading {
+      text-align: right;
+  }
+  .infoText {
+    text-align: left;
+  }
+}
+
+.courseOverview {
+  margin: 1rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+}
+
 .footer {
   display: flex;
   -webkit-display: flex;
