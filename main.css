@@ -249,6 +249,7 @@ form .form-input button:focus {
   margin: 1rem;
   border: 1px solid black;
   border-radius: 1rem;
+  padding-bottom: 1rem;
 }
 
 .footer {
