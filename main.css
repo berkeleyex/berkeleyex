@@ -246,7 +246,10 @@ form .form-input button:focus {
 }
 
 .courseOverview {
-  margin: 1rem;
+  margin: 0 1rem;
+}
+.courseOverview .wrapper {
+  margin-top: 2rem;
   border: 1px solid black;
   border-radius: 1rem;
   padding-bottom: 1rem;
