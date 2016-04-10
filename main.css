@@ -16,10 +16,11 @@ a, a:hover { text-decoration: none; color: #505050; }
 a { -webkit-transition: color 0.5s; transition: color 0.5s; }
 
 .bold { font-weight: 600; }
+.uppercase { text-transform: uppercase; }
 
 /* menu */
 .menu {
-  padding: 2rem 0;
+  padding: 0.5rem 0 2rem 0;
   font-size: 0.75rem;
   font-weight: 600;
 }
@@ -30,14 +31,14 @@ a { -webkit-transition: color 0.5s; transition: color 0.5s; }
 }
 @media (min-width: 992px) {
   .menu {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     display: flex;
     align-items: center;
   }
 }
 
 .menu .logo {
-  height: 6rem;
+  height: 4rem;
   max-width: 15rem;
 }
 @media (min-width: 768px) {
@@ -69,7 +70,7 @@ a { -webkit-transition: color 0.5s; transition: color 0.5s; }
 
 /* index page call-to-action */
 .landing-page {
-  padding: 10rem 0;
+  padding: 5rem 0;
   display: flex;
   align-items: center;
   flex-flow: column;
@@ -77,6 +78,31 @@ a { -webkit-transition: color 0.5s; transition: color 0.5s; }
 
 .landing-page .icon {
   font-size: 30px;
+}
+
+.splash-section {
+  text-align: left;
+}
+
+.splash-section .splash-image {
+  height: 20rem;
+}
+
+.splash-section .logo {
+  height: 8rem;
+  margin-bottom: 1rem;
+  max-width: 20rem;
+}
+
+@media (min-width: 768px) {
+  .splash-section .logo {
+    max-width: 25rem;
+  }
+}
+@media (min-width: 992px) {
+  .splash-section .logo {
+    max-width: 30rem;
+  }
 }
 
 /* card */
@@ -176,7 +202,7 @@ form .form-input button:focus {
 }
 
 /* instructor profile */
-.director, .instructors {
+.director, .instructors, .curriculum {
   padding: 2rem 0;
 }
 
@@ -189,7 +215,7 @@ form .form-input button:focus {
   border-radius: 50%;
 }
 
-.director p, .instructors p {
+.director p, .instructors p, .curriculum p {
   text-align: left;
 }
 
@@ -225,7 +251,7 @@ form .form-input button:focus {
   text-align: left;
 }
 
-.profile-text h2 {
+.profile-text h2, .curriculum-card h3 {
   margin-top: 0;
 }
 
