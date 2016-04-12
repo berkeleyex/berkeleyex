@@ -80,8 +80,10 @@ a { -webkit-transition: color 0.5s; transition: color 0.5s; }
   font-size: 30px;
 }
 
-.splash-section {
-  text-align: left;
+@media (min-width: 992px) {
+  .splash-text {
+    text-align: left;
+  }
 }
 
 .splash-section .splash-image {
@@ -89,19 +91,20 @@ a { -webkit-transition: color 0.5s; transition: color 0.5s; }
 }
 
 .splash-section .logo {
-  height: 8rem;
+  height: 4rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
   max-width: 20rem;
 }
 
 @media (min-width: 768px) {
   .splash-section .logo {
-    max-width: 25rem;
+    height: 6rem;
   }
 }
 @media (min-width: 992px) {
   .splash-section .logo {
-    max-width: 30rem;
+    height: 8rem;
   }
 }
 
