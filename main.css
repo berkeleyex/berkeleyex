@@ -82,6 +82,7 @@ a { -webkit-transition: color 0.5s; transition: color 0.5s; }
 
 @media (min-width: 992px) {
   .splash-text {
+    margin-top: 8rem;
     text-align: left;
   }
 }
