@@ -109,6 +109,20 @@ a { -webkit-transition: color 0.5s; transition: color 0.5s; }
   }
 }
 
+.splash-section .sign-up {
+  display: inline-block;
+  background-color: #505050;
+  transition: background-color 0.5s;
+  color: white;
+  padding: .5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+}
+
+.splash-section .sign-up:hover {
+  background-color: darkseagreen;
+}
+
 /* card */
 .card-section {
   text-align: center;
