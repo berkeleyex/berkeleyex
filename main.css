@@ -17,12 +17,12 @@ a { -webkit-transition: color 0.5s; transition: color 0.5s; }
 
 .bold { font-weight: 600; }
 .uppercase { text-transform: uppercase; }
+.text-pink { color: #ef4d7a; }
 
 /* menu */
 .menu {
   padding: 0.5rem 0 2rem 0;
   font-size: 0.75rem;
-  font-weight: 600;
 }
 @media (min-width: 768px) {
   .menu {
@@ -31,7 +31,7 @@ a { -webkit-transition: color 0.5s; transition: color 0.5s; }
 }
 @media (min-width: 992px) {
   .menu {
-    font-size: 1.25rem;
+    font-size: 1rem;
     display: flex;
     align-items: center;
   }
@@ -82,13 +82,22 @@ a { -webkit-transition: color 0.5s; transition: color 0.5s; }
 
 @media (min-width: 992px) {
   .splash-text {
-    margin-top: 8rem;
     text-align: left;
   }
 }
 
 .splash-section .splash-image {
   height: 20rem;
+}
+
+.splash-section .splash-text h1 {
+  font-size: 2.5rem;
+  line-height: 1.25em;
+  margin: 0;
+}
+
+.splash-section .splash-text h2 {
+  margin: 0.5rem 0;
 }
 
 .splash-section .logo {
@@ -110,13 +119,13 @@ a { -webkit-transition: color 0.5s; transition: color 0.5s; }
 }
 
 .splash-section .sign-up {
+  margin-top: 1rem;
   display: inline-block;
-  background-color: #505050;
+  background-color: #ef4d7a;
   transition: background-color 0.5s;
   color: white;
-  padding: .5rem;
-  border-radius: 0.5rem;
-  text-decoration: none;
+  padding: 0.75rem 2.5rem;
+  border-radius: 0.325rem;
 }
 
 .splash-section .sign-up:hover {
@@ -233,7 +242,7 @@ form .form-input button:focus {
   border-radius: 50%;
 }
 
-.director p, .instructors p, .curriculum p {
+.objective p, .director p, .instructors p, .curriculum p {
   text-align: left;
 }
 
@@ -270,6 +279,12 @@ form .form-input button:focus {
 }
 
 .profile-text h2, .curriculum-card h3 {
+  margin-top: 0;
+}
+
+.profile-text .degree {
+  line-height: 1.5rem;
+  font-size: 1rem;
   margin-top: 0;
 }
 
