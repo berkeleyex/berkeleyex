@@ -316,6 +316,12 @@ form .form-input button:focus {
   padding-top: 1rem;
   margin-top: 1rem;
   border-top: 1px solid lightgrey;
+  font-size: 0.75rem;
+}
+@media (min-width: 992px) {
+  footer {
+    font-size: 1rem;
+  }
 }
 
 .copyright {
