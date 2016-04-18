@@ -347,6 +347,7 @@ form .form-input button:focus {
 }
 
 .copyright {
+  font-size: 0.75rem;
   color: white;
   margin: 1rem 0;
 }
