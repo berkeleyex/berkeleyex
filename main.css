@@ -9,6 +9,13 @@ html, body {
   padding: 0;
 }
 
+.row {
+  margin-bottom: 2rem;
+}
+.row:last-child {
+  margin-bottom: 0;
+}
+
 h1 { font-weight: 200; }
 h2 { font-weight: 200; }
 h3 { font-weight: 200; }
@@ -20,38 +27,44 @@ a, a:hover { text-decoration: none; color: #505050; }
 
 /* menu */
 .menu {
-  padding: 0.5rem 0 2rem 0;
-  font-size: 0.75rem;
+  background-color: #203443;
+  padding: 0.5rem 0 0.5rem 0;
+  font-size: 1rem;
+
 }
 @media (min-width: 768px) {
   .menu {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 }
 @media (min-width: 992px) {
   .menu {
-    font-size: 1rem;
+    font-size: 1.5rem;
     display: flex;
     align-items: center;
   }
 }
 
-.menu .logo {
+.menu .logo,
+.footer .logo {
   height: 4rem;
   max-width: 15rem;
 }
 @media (min-width: 768px) {
-  .menu .logo {
+  .menu .logo,
+  .footer .logo {
     max-width: 20rem;
   }
 }
 @media (min-width: 992px) {
-  .menu .logo {
+  .menu .logo,
+  .footer .logo {
     max-width: 30rem;
   }
 }
 
 .menu a {
+  color: white;
   text-align: center;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -69,7 +82,7 @@ a, a:hover { text-decoration: none; color: #505050; }
 
 /* index page call-to-action */
 .landing-page {
-  padding: 5rem 0;
+  padding-bottom: 2rem;
   display: flex;
   align-items: center;
   flex-flow: column;
@@ -310,17 +323,29 @@ form .form-input button:focus {
 }
 
 .footer {
+  background-color: #203443;
   padding-top: 1rem;
   margin-top: 1rem;
-  border-top: 1px solid lightgrey;
-  font-size: 0.75rem;
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  .footer {
+    font-size: 1.25rem;
+  }
 }
 @media (min-width: 992px) {
-  footer {
-    font-size: 1rem;
+  .footer {
+    font-size: 1.5rem;
   }
 }
 
+.footer a {
+  color: white;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .copyright {
+  color: white;
   margin: 1rem 0;
 }
