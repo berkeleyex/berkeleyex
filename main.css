@@ -25,59 +25,68 @@ a, a:hover { text-decoration: none; color: #505050; }
 .uppercase { text-transform: uppercase; }
 .text-pink { color: #ef4d7a; }
 
-/* menu */
-.menu {
+/* header and footer */
+.header, .footer {
   background-color: #203443;
   padding: 0.5rem 0 0.5rem 0;
   font-size: 1rem;
 
 }
 @media (min-width: 768px) {
-  .menu {
-    font-size: 1.25rem;
+  .header, .footer {
+    font-size: 1.2rem;
   }
 }
 @media (min-width: 992px) {
-  .menu {
-    font-size: 1.5rem;
+  .header, .footer {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .header .container,
+  .footer .container {
     display: flex;
     align-items: center;
   }
 }
 
-.menu .logo,
+.header .logo,
 .footer .logo {
   height: 4rem;
-  max-width: 15rem;
+  max-width: 10rem;
 }
 @media (min-width: 768px) {
-  .menu .logo,
+  .header .logo,
   .footer .logo {
     max-width: 20rem;
   }
 }
 @media (min-width: 992px) {
-  .menu .logo,
+  .header .logo,
   .footer .logo {
     max-width: 30rem;
   }
 }
 
-.menu a {
+.header a,
+.footer a {
   color: white;
   text-align: center;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
 @media (min-width: 768px) {
-  .menu a {
+  .header a,
+  .footer a {
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
 }
 
-.menu a:hover {
-  color: darkseagreen;
+.header a:hover,
+.footer a:hover {
+  color: white;
 }
 
 /* index page call-to-action */
@@ -103,12 +112,13 @@ a, a:hover { text-decoration: none; color: #505050; }
 }
 
 .splash-section .splash-text h1 {
-  font-size: 2.5rem;
-  line-height: 1.25em;
+  font-size: 1.8rem;
+  line-height: 1.5em;
   margin: 0;
 }
 
 .splash-section .splash-text h2 {
+  font-size: 1.5rem;
   margin: 0.5rem 0;
 }
 
@@ -239,25 +249,22 @@ form .form-input button:focus {
 }
 
 /* instructor profile */
-.director, .instructors, .curriculum {
-  padding: 2rem 0;
-}
-
-.instructors, .profiles {
-}
-
 .director img {
   height: 7.5rem;
   width: 7.5rem;
   border-radius: 50%;
 }
 
-.objective p, .director p, .instructors p, .curriculum p {
+.objective p, .director p, .instructors p {
   text-align: left;
 }
 
+.profiles.row {
+  margin-bottom: 0;
+}
+
 .profile-image {
-  margin-top: 2.5rem;
+  margin-top: 0.5rem;
 }
 
 .profile-image img {
@@ -267,16 +274,6 @@ form .form-input button:focus {
   border-radius: 50%;
 }
 
-@media (min-width: 768px) {
-  .profile-image img {
-  }
-}
-
-@media (min-width: 992px) {
-  .profile-image img {
-  }
-}
-
 .profile-text {
   display: flex;
   -webkit-display: flex;
@@ -284,19 +281,22 @@ form .form-input button:focus {
   -webkit-flex-direction: column;
   justify-content: center;
   -webkit-justify-content: center;
-  margin: 1rem 0;
   text-align: left;
 }
 
-.profile-text h2, .curriculum-card h3 {
+.profile-text h3 {
   margin-top: 0;
 }
 
 .profile-text .degree {
-  line-height: 1.5rem;
+  line-height: 1.35rem;
   font-size: 1rem;
   font-style: italic;
   margin-top: 0;
+}
+
+.profile-text p {
+  margin-bottom: 2rem;
 }
 
 /* curriculum page */
@@ -336,14 +336,14 @@ form .form-input button:focus {
 }
 @media (min-width: 992px) {
   .footer {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
 
 .footer a {
   color: white;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .copyright {
