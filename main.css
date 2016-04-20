@@ -1,10 +1,9 @@
 html, body {
   font-family: Helvetica Neue, Arial, Times New Roman;
-  font-size: 18px;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #505050;
-  text-align: center;
   margin: 0;
   padding: 0;
 }
@@ -101,9 +100,12 @@ a, a:hover { text-decoration: none; color: #505050; }
   font-size: 30px;
 }
 
-@media (min-width: 992px) {
-  .splash-text {
-    text-align: left;
+@media (max-width: 991px) {
+  h2 {
+    text-align: center;
+  }
+  .splash-section {
+    text-align: center;
   }
 }
 
@@ -198,7 +200,6 @@ form .form-input {
 
 form .form-input label {
   display: block;
-  text-align: left;
 }
 
 form .form-input textarea, form .form-input input {
@@ -234,23 +235,13 @@ form .form-input button:focus {
   outline: none;
 }
 
-/* instructor profile */
-.director img {
-  height: 7.5rem;
-  width: 7.5rem;
-  border-radius: 50%;
-}
-
-.objective p, .director p, .instructors p {
-  text-align: left;
-}
-
 .profiles.row {
   margin-bottom: 0;
 }
 
 .profile-image {
   margin-top: 0.5rem;
+  text-align: center;
 }
 
 .profile-image img {
@@ -267,7 +258,6 @@ form .form-input button:focus {
   -webkit-flex-direction: column;
   justify-content: center;
   -webkit-justify-content: center;
-  text-align: left;
 }
 
 .profile-text h3 {
@@ -278,7 +268,7 @@ form .form-input button:focus {
   line-height: 1.35rem;
   font-size: 1rem;
   font-style: italic;
-  margin-top: 0;
+  margin-top: -0.5rem;
 }
 
 .profile-text p {
@@ -331,6 +321,7 @@ form .form-input button:focus {
 }
 
 .copyright {
+  text-align: center;
   font-size: 0.75rem;
   color: white;
   margin: 1rem 0;
