@@ -30,7 +30,10 @@ a, a:hover { text-decoration: none; color: #505050; }
   background-color: #203443;
   padding: 0.5rem 0 0.5rem 0;
   font-size: 1rem;
-
+  border-radius: 0;
+}
+.footer {
+  margin-bottom: 0;
 }
 @media (min-width: 768px) {
   .header, .footer {
