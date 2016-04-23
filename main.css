@@ -235,6 +235,10 @@ form .form-input button:focus {
   outline: none;
 }
 
+#thankYou {
+  text-align: center;
+}
+
 .profiles.row {
   margin-bottom: 0;
 }
