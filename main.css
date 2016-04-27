@@ -286,7 +286,7 @@ form .form-input button:focus {
 
 @media (min-width: 768px) {
   .infoHeading {
-      text-align: right;
+    text-align: right;
   }
   .infoText {
     text-align: left;
