@@ -24,6 +24,21 @@ a, a:hover { text-decoration: none; color: #505050; }
 .uppercase { text-transform: uppercase; }
 .text-pink { color: #ef4d7a; }
 
+.toggle-translation {
+  z-index: 1;
+  margin: 0.5rem 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.toggle-translation .flag {
+  margin-right: 0.5rem;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+}
+
 /* header and footer */
 .header, .footer {
   background-color: #203443;
