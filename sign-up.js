@@ -12,6 +12,7 @@ function validateForm () {
     $('#nameError').hide();
     $('#emailError').hide();
     $('#phoneError').hide();
+    $('#ageError').hide();
     var isValid = true;
 
     if ($('#formName').val().trim() === '') {
@@ -26,6 +27,11 @@ function validateForm () {
 
     if ($('#formTelephone').val().trim() === '') {
         $('#phoneError').show();
+        isValid = false;
+    }
+
+    if (!$('#formAgeCheck').prop('checked')) {
+        $('#ageError').show();
         isValid = false;
     }
 

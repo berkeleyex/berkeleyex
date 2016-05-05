@@ -250,6 +250,11 @@ form .form-input button:focus {
   outline: none;
 }
 
+form #formAgeCheck {
+  width: auto;
+  margin-right: 10px;
+}
+
 #thankYou {
   text-align: center;
 }
