@@ -1,10 +1,11 @@
 $(document).ready(function () {
     document.getElementById('signUpForm').onsubmit = function () {
-        return validateForm();
-    };
+        var isValid = validateForm();
+        if (isValid) {
+            onSignup();
+        }
 
-    document.getElementById('dummy').onload = function () {
-        onSignup();
+        return isValid;
     };
 });
 
